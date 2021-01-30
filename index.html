@@ -4,6 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link id="stylesheet" rel="stylesheet"
 href="style.css">
+<script src="https://kit.fontawesome.com/399461c2e9.js" crossorigin="anonymous"></script>
+<style type="text/css"
+       media="all">
+  @font-face{
+  src:url('sansation.ttf');
+  format:('truetype');
+  font-family:"sansation";
+  }
+</style>
 </head>
 <body>
 <div class="lightmode" id="lightmode">
@@ -12,20 +21,7 @@ href="style.css">
      alt="logo"
      width="40"
      height="40"></img><h1>VICTERS</h1>
-     <div class="p" onclick="movefunction()">
-     <div class="div" id="div" onclick="themefunction()">
-     <div class="div1"></div>
-     <div class="div2"></div>
-     </div>
-     </div>
-     <div class="themes" id="themes">
-       <input onclick="myFunction()" type="checkbox" id="checkbox" class="checkbox"/>
-     <label for="checkbox" class="label">
-       <img class="moon" src="images/moon.png" alt="Dark" />
-       <img class="sun" src="images/sun.png" alt="Light" />
-       <div class="ball"></div>
-     </label>
-    </div>
+     <i onclick="myFunction()" class="fas fa-adjust"></i>
      </div>
 <div class="loading" id="loading">
 </div>
@@ -118,25 +114,10 @@ href="style.css">
   }
 </script>
 <script type="text/javascript" charset="utf-8">
-  
-</script>
-<script type="text/javascript" charset="utf-8">
 function myFunction() {
 var element = document.getElementById('lightmode');
 element.classList.toggle("darkmode");
 }
-</script>
-<script type="text/javascript" charset="utf-8">
-  function themefunction(){
-    var x = document.getElementById("themes");
-   x.classList.toggle("themes1");
-  }
-</script>
-<script type="text/javascript" charset="utf-8">
-  function movefunction(){
-  var y = document.getElementById("div");
-  y.classList.toggle("divmove");
-  }
 </script>
 </div>
 </body>

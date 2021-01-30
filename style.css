@@ -1,3 +1,6 @@
+ * {
+   font-family: sansation;
+ }
  body {
        margin: 0;
        padding: 0;
@@ -11,10 +14,9 @@
    z-index:0;
  }
  h1{
-   margin-left: 10px;
-       font-size:30px;
-       text-align: left;
-       font-family: monospace;
+    margin-left: 10px;
+    font-size:30px;
+    text-align: left;
 }
  
  button{
@@ -114,23 +116,6 @@
     padding-left:20px;
   }
 }
-.themes{
-    width:0px;
-    overflow-x: hidden;
-    display:flex;
-    justify-content: center;
-    position: absolute;
-    right:-50px;
-    transition:0.3s ease-out;
-}
-.themes1{
-  width:60px;
-  overflow-x: hidden;
-  display:flex;
-  justify-content: center;
-  position: absolute;
-  right:10px;
-}
 .dark {
   font-size: 18px;
   margin-top:5px;
@@ -157,82 +142,11 @@
 .darkmode .logo{
   background-color:white;
 }
-.moon{
-  width: 15px;
-  height:15px;
-}
-.sun{
-    width: 15px;
-    height:15px;
-}
-.label{
-  position: relative;
-  background-color:#292929;
-    width:45px;
-    height:20px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-}
-.ball{
+.fa-adjust{
+  font-size: 23px;
   position: absolute;
-  top:3px;
-  right: 3px;
-  background-color:white;
-  width:24px;
-  height:24px;
-  border-radius:50%;
-  transition:0.3s ease-in-out;
+  right: 15px;
 }
-.checkbox {
-  opacity:0;
-  position: absolute;
-}
-.checkbox:checked + .label .ball{
-  transform: translateX(-25px);
-  background-color:black;
-}
-.checkbox:checked + .label{
-  background-color:white;
-}
-.div{
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top:30px;
-  right:5px;
-  transition:0.3s ease-in-out;
-}
-.divmove{
-  width: 30px;
-  height: 30px;
-  transform:translateY(-18px) translateX(-70px) rotate(180deg);
-}
-.div1{
-  background-color: black;
-  width:15px;
-  height: 3px;
-  margin-bottom: 6px;
-  transform: rotate(-45deg)
-}
-.div2{
-  transform: rotate(45deg);
-  background-color: black;
-  width:15px;
-  height: 3px;
-}
-.darkmode .div1{
-  background-color: white;
-  width:15px;
-  height: 3px;
-  margin-bottom: 6px;
-  transform: rotate(-45deg)
-}
-.darkmode .div2{
-  background-color: white;
-  width: 15px;
-  height: 3px;
-  transform: rotate(45deg)
+.darkmode .fa-adjust{
+  color: #FFFFFF;
 }
