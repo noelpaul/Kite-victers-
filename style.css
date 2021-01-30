@@ -1,0 +1,238 @@
+ body {
+       margin: 0;
+       padding: 0;
+       font-family: verdana;
+ }
+ .lightmode{
+   background-color:white;
+   height:100%;
+   width: 100%;
+   transition:0.3s ease-out;
+   z-index:0;
+ }
+ h1{
+   margin-left: 10px;
+       font-size:30px;
+       text-align: left;
+       font-family: monospace;
+}
+ 
+ button{
+        padding:1px;
+        border:4px solid black;
+ }
+ 
+ .ul {
+     background-color:white;
+     display:block;
+     position: sticky;
+     top:0;
+     margin:0;
+     padding:0px;
+     overflow:auto;
+     white-space: nowrap;
+     border-bottom: 1px solid black;
+     border-top: 1px solid black;
+     z-index:4;
+ }
+ 
+ .ul a {
+   background-color:rgba(192,192,192,0.2); 
+       color:black;
+       text-align: center;
+       margin:7px;
+       padding: 13px;
+       display:inline-block;
+       text-decoration: none;
+       font-size: 18px;
+       border-radius:40px 40px;
+ }
+ .ul a:hover{
+      background-color:rgba(192,192,192,0.8);
+ }
+ .container{
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   padding-top: 60.25%;
+   
+   }
+.responsive-iframe{position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ width: 100%;
+ height: 100%;
+ z-index:1;
+ 
+ }
+ .classdetail{
+  margin-left:20px;
+  margin-right :20px;
+  font-size:20px;
+ }
+.logo{
+  margin-left: 20px;
+  border-radius:50%;
+}
+.header{
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center ;
+}
+.loading {
+  position: absolute;
+  left:45%;
+  top:55%;
+  height:30px;
+  width:30px;
+  border-radius :50%;
+  border: 4px solid #D0D0D0;
+  border-top: 4px solid red;
+  border-left: 4px solid #FF5660;
+  border-bottom: 4px solid #FAA9AD;
+  animation:rotatediv 1s linear infinite forwards;
+  z-index: 3;
+}
+@keyframes rotatediv {
+  0%{transform:rotate(0deg)
+  }
+  100%{
+  transform:rotate(360deg)
+}
+}
+@media screen and (min-width:600px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top:70px;
+  }
+  .grid-item{
+    padding-right:20px;
+    padding-left:20px;
+  }
+}
+.themes{
+    width:0px;
+    overflow-x: hidden;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    right:-50px;
+    transition:0.3s ease-out;
+}
+.themes1{
+  width:60px;
+  overflow-x: hidden;
+  display:flex;
+  justify-content: center;
+  position: absolute;
+  right:10px;
+}
+.dark {
+  font-size: 18px;
+  margin-top:5px;
+  margin-left:5px;
+}
+.darkmode{
+  background-color: #121212;
+}
+.darkmode .ul{
+  background-color:   #121212;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+
+}
+.darkmode h1{
+  color: white;
+}
+.darkmode .classdetail{
+  color: white;
+}
+.darkmode .ul a{
+  color:white;
+}
+.darkmode .logo{
+  background-color:white;
+}
+.moon{
+  width: 15px;
+  height:15px;
+}
+.sun{
+    width: 15px;
+    height:15px;
+}
+.label{
+  position: relative;
+  background-color:#292929;
+    width:45px;
+    height:20px;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.ball{
+  position: absolute;
+  top:3px;
+  right: 3px;
+  background-color:white;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  transition:0.3s ease-in-out;
+}
+.checkbox {
+  opacity:0;
+  position: absolute;
+}
+.checkbox:checked + .label .ball{
+  transform: translateX(-25px);
+  background-color:black;
+}
+.checkbox:checked + .label{
+  background-color:white;
+}
+.div{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:30px;
+  right:5px;
+  transition:0.3s ease-in-out;
+}
+.divmove{
+  width: 30px;
+  height: 30px;
+  transform:translateY(-18px) translateX(-70px) rotate(180deg);
+}
+.div1{
+  background-color: black;
+  width:15px;
+  height: 3px;
+  margin-bottom: 6px;
+  transform: rotate(-45deg)
+}
+.div2{
+  transform: rotate(45deg);
+  background-color: black;
+  width:15px;
+  height: 3px;
+}
+.darkmode .div1{
+  background-color: white;
+  width:15px;
+  height: 3px;
+  margin-bottom: 6px;
+  transform: rotate(-45deg)
+}
+.darkmode .div2{
+  background-color: white;
+  width: 15px;
+  height: 3px;
+  transform: rotate(45deg)
+}
