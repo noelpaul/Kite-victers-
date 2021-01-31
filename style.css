@@ -18,7 +18,22 @@
     font-size:30px;
     text-align: left;
 }
- 
+.v{
+  font-size: 35px;
+  color: #787878;
+}
+span{
+  transition: 0.1s linear;
+}
+span:hover{
+  font-size:40px;
+}
+h2{
+  text-align: center;
+  font-family: Verdana,Tahoma, sans-serif;
+  font-weight: 1;
+  font-size:10px;
+}
  button{
         padding:1px;
         border:4px solid black;
@@ -76,7 +91,7 @@
   font-size:20px;
  }
 .logo{
-  margin-left: 20px;
+  margin-left: 10px;
   border-radius:50%;
 }
 .header{
@@ -117,6 +132,17 @@
     padding-left:20px;
   }
 }
+@media screen and (min-width:900px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top:70px;
+  }
+  .grid-item{
+    padding-right:20px;
+    padding-left:20px;
+  }
+}
 .dark {
   font-size: 18px;
   margin-top:5px;
@@ -150,4 +176,7 @@
 }
 .darkmode .fa-adjust{
   color: #FFFFFF;
+}
+.darkmode h2{
+  color: white;
 }
