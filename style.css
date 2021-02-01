@@ -94,6 +94,20 @@ h2{
   margin-left: 10px;
   border-radius:50%;
 }
+.logo:hover{
+  animation: logomove 0.7s ease-in-out infinite forwards;
+}
+@keyframes logomove {
+  0% {
+    transform: translateY(5px)
+  }
+  50%{
+    transform: translateY(-10px)
+  }
+  100%{
+    transform: translateY(5px)
+  }
+}
 .header{
   height: 70px;
   display: flex;
@@ -173,6 +187,9 @@ h2{
   font-size: 23px;
   position: absolute;
   right: 15px;
+}
+.fa-adjust:hover{
+  animation: logomove 0.7s ease-in-out 1 forwards;
 }
 .darkmode .fa-adjust{
   color: #FFFFFF;
