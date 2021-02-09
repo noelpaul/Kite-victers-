@@ -18,14 +18,14 @@
     font-size:30px;
     text-align: left;
 }
-.v{
+#v{
   font-size: 35px;
   color: #787878;
 }
-span{
+.span{
   transition: 0.1s linear;
 }
-span:hover{
+.span:hover{
   font-size:40px;
 }
 h2{
@@ -179,21 +179,72 @@ h2{
 }
 .darkmode .ul a{
   color:white;
+  padding: 10px;
 }
 .darkmode .logo{
   background-color:white;
 }
 .fa-adjust{
   font-size: 23px;
-  position: absolute;
-  right: 15px;
+  padding: 10px;
 }
-.fa-adjust:hover{
+#vivo:hover .fa-adjust{
   animation: logomove 0.7s ease-in-out 1 forwards;
 }
 .darkmode .fa-adjust{
   color: #FFFFFF;
 }
 .darkmode h2{
+  color: white;
+}
+.menu{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+}
+.contain{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0,0.2) 16px 16px 4px;
+  position:fixed;
+  top:70px;
+  right:0;
+  height:auto;
+  width:50%;
+  z-index:5;
+  display: none;
+  grid-template-columns: auto ;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+}
+.contain1{
+  display: grid;
+}
+.vivo{
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.gig {
+  color: red;
+  font-size:20px;
+}
+.hha{
+  color:black;
+  text-decoration:none;
+  padding:10px;
+}
+.vivo:hover{
+   border:2px solid red;
+}
+.omm{
+  padding-left: 10px;
+}
+.darkmode .contain1{
+  background-color: black;
+  color: white;
+}
+.darkmode .hha {
   color: white;
 }
