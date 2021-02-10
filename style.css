@@ -94,6 +94,11 @@ h2{
   margin-left: 10px;
   border-radius:50%;
 }
+.logo1 {
+  margin-left: 10px;
+  border-radius: 50%;
+  animation: logomove 0.7s ease-in-out infinite forwards;
+}
 .logo:hover{
   animation: logomove 0.7s ease-in-out infinite forwards;
 }
@@ -114,20 +119,7 @@ h2{
   justify-content: flex-start;
   align-items:center ;
 }
-.loading {
-  position: absolute;
-  left:45%;
-  top:50%;
-  height:40px;
-  width:40px;
-  border-radius :50%;
-  border: 4px solid #D0D0D0;
-  border-top: 4px solid red;
-  border-left: 4px solid #FF5660;
-  border-bottom: 4px solid #FAA9AD;
-  animation:rotatediv 1s linear infinite forwards;
-  z-index: 3;
-}
+
 @keyframes rotatediv {
   0%{transform:rotate(0deg)
   }
@@ -247,4 +239,49 @@ h2{
 }
 .darkmode .hha {
   color: white;
+}
+.loadingpage{
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:white;
+}
+.loadingcover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:50%;
+  width: 100%;
+}
+.loading {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid #D0D0D0;
+  border-top: 4px solid red;
+  border-left: 4px solid #FF5660;
+  border-bottom: 4px solid #FAA9AD;
+  animation: rotatediv 1s linear infinite forwards;
+  z-index: 3;
+}
+#please{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:40%;
+  width: 100%;
+}
+.logojump{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:30%;
+  width: 100%;
 }
