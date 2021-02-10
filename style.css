@@ -250,11 +250,12 @@ h2{
   background-color:white;
 }
 .loadingcover{
+  margin-bottom:10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top:50%;
+  top:55%;
   width: 100%;
 }
 .loading {
@@ -270,18 +271,20 @@ h2{
   z-index: 3;
 }
 #please{
+  margin-bottom:10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top:40%;
+  top:45%;
   width: 100%;
 }
 .logojump{
+  margin-bottom:10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top:30%;
+  top:35%;
   width: 100%;
 }
