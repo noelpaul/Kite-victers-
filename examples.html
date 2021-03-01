@@ -1,79 +1,72 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-  }
-  #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 40%; 
-  min-height:40%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-}
-
-#myBtn:hover {
-  background:#5B5B5B;
-  color: black;
-  outline: none;
-}
-</style>
-</head>
-<body>
-<video autoplay muted loop id="myVideo">
-  <source src="rain.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-<script>
-  var video = document.getElementById("myVideo");
-  var btn = document.getElementById("myBtn");
-
-  function myFunction() {
-    if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause";
-    } else {
-      video.pause();
-      btn.innerHTML = "Play";
-    }
-  }
-</script>
-</body>
-
-</html>
+<HTML>
+	<HEAD>
+		<TITLE>Popup div with disabled background</TITLE>
+		<style>
+			.ontop {
+				z-index: 999;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: none;
+				position: absolute;				
+				background-color: #cccccc;
+				color: #aaaaaa;
+				opacity: .4;
+				filter: alpha(opacity = 50);
+			}
+			#popup {
+				width: 300px;
+				height: 200px;
+				position: absolute;
+				color: #000000;
+				background-color: #ffffff;
+				/* To align popup window at the center of screen*/
+				top: 50%;
+				left: 50%;
+				margin-top: -100px;
+				margin-left: -150px;
+			}
+		</style>
+		<script type="text/javascript">
+			function pop(div) {
+				document.getElementById(div).style.display = 'block';
+			}
+			function hide(div) {
+				document.getElementById(div).style.display = 'none';
+			}
+			//To detect escape button
+			document.onkeydown = function(evt) {
+				evt = evt || window.event;
+				if (evt.keyCode == 27) {
+					hide('popDiv');
+				}
+			};
+		</script>
+	</HEAD>
+	<BODY>
+		<div id="popDiv" class="ontop">
+			<table border="1" id="popup">
+				<tr>
+					<td>
+						This is can be used as a popup window
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Click Close OR escape button to close it
+						<a href="#" onClick="hide('popDiv')">Close</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<CENTER>
+			<h3>
+				Simple popup div with disabled background
+			</h3>
+			<br/>
+			<a href="#" onClick="pop('popDiv')">Click here to open a popup div</a>
+		</CENTER>
+	</BODY>
+</HTML>

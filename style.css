@@ -1,5 +1,6 @@
  * {
    font-family: sansation;
+   scroll-behavior: smooth;
  }
  body {
        margin: 0;
@@ -97,7 +98,6 @@ h2{
 .logo1 {
   margin-left: 10px;
   border-radius: 50%;
-  animation: logomove 0.7s ease-in-out infinite forwards;
 }
 .logo:hover{
   animation: logomove 0.7s ease-in-out infinite forwards;
