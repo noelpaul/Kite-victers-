@@ -14,6 +14,9 @@
    transition:0.3s ease-out;
    z-index:0;
  }
+ .lightmode body{
+   background-color:white;
+ }
  h1{
     margin-left: 10px;
     font-size:30px;
@@ -157,6 +160,9 @@ h2{
 .darkmode{
   background-color: #121212;
 }
+.darkmode body{
+  background-color: #121212;
+}
 .darkmode .ul{
   background-color:   #121212;
   border-bottom: 1px solid white;
@@ -241,6 +247,7 @@ h2{
   color: white;
 }
 .loadingpage{
+  display: none;
   z-index: 7;
   position: fixed;
   top: 0;
@@ -287,4 +294,19 @@ h2{
   position: absolute;
   top:35%;
   width: 100%;
+}
+.scrollbutton{
+  border-radius: 50px;
+  margin:0;
+  padding:0;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 25;
+  background-color: #9F9F9F;
+}
+.scrollbutton img{
+  margin: 10px;
+  width: 20px;
+  height: 20px;
 }
