@@ -134,6 +134,9 @@ h2{
 }
 }
 @media screen and (min-width:600px) {
+ .vivo {
+      width: 400px;
+    }
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -145,6 +148,9 @@ h2{
   }
 }
 @media screen and (min-width:900px) {
+  .vivo{
+    width: 400px;
+  }
   .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -215,10 +221,8 @@ h2{
   top:70px;
   right:0;
   height:auto;
-  width:50%;
   z-index:5;
   display: none;
-  grid-template-columns: auto ;
   justify-content:center;
   align-items: center;
   padding: 10px;
@@ -230,6 +234,7 @@ h2{
   display:flex;
   justify-content:flex-start;
   align-items: center;
+  width: 200px;
 }
 .gig {
   color: red;
@@ -254,6 +259,7 @@ h2{
   color: white;
 }
 .loadingpage{
+  display: none;
   z-index: 21;
   position: fixed;
   top: 0;
