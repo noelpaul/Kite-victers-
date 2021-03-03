@@ -259,7 +259,6 @@ h2{
   color: white;
 }
 .loadingpage{
-  display: none;
   z-index: 21;
   position: fixed;
   top: 0;
