@@ -309,3 +309,11 @@ h2{
   width: 20px;
   height: 20px;
 }
+.jp{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.darkmode .jp{
+  color: white;
+}
