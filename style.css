@@ -8,6 +8,7 @@
        font-family: verdana;
  }
  .lightmode{
+   display: none;
    background-color:white;
    height:100%;
    width: 100%;
@@ -133,6 +134,33 @@ h2{
   transform:rotate(360deg)
 }
 }
+#ab {
+  display: none;
+}
+#bb {
+  display: none;
+}
+#cb {
+  display: none;
+}
+#db {
+  display: none;
+}
+#eb {
+  display: none;
+}
+#fb {
+  display: none;
+}
+#gb {
+  display: none;
+}
+#cc {
+  display: none;
+}
+#hb {
+  display: none;
+}
 @media screen and (min-width:600px) {
  .vivo {
       width: 400px;
@@ -146,10 +174,48 @@ h2{
     padding-right:20px;
     padding-left:20px;
   }
+  #aa {
+    display: none;
+  }
+  #ab {
+    display:inline-block;
+  }
+  #ba {
+    display: none;
+  }
+  #bb {
+    display:inline-block;
+  }
+  #ca {
+    display: none;
+  }
+  #cb {
+    display:inline-block;
+  }
+  #da {
+    display: none;
+  }
+  #db {
+    display:inline-block;
+  }
+  #ea {
+    display: none;
+  }
+  #eb {
+    display:inline-block;
+  }
 }
 @media screen and (min-width:900px) {
-  .vivo{
-    width: 400px;
+  #vivo {
+    width: 150px;
+    font-size: 20px;
+  }
+  #vivo1 {
+    padding:10px;
+  }
+  .hha .omm .gig {
+    font-size: 20px;
+
   }
   .grid-container{
     display: grid;
@@ -159,6 +225,46 @@ h2{
   .grid-item{
     padding-right:20px;
     padding-left:20px;
+  }
+  #fa {
+    display: none;
+  }
+  #fb {
+    display:inline-block;
+  }
+  #ga {
+    display: none;
+  }
+  #gb {
+    display:inline-block;
+  }
+  #cb {
+    display: none;
+  }
+  #cc {
+    display:inline-block;
+  }
+  #ha {
+    display: none;
+  }
+  #hb {
+    display:inline-block;
+  }
+  .menu{
+    display: none;
+  }
+  #contain {
+    background-color: white;
+    box-shadow: 5px 10px 8px white;
+    position:absolute;
+    top:auto;
+    right:15px;
+    height:auto;
+    z-index:1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:0px;
   }
 }
 .loadingpage2{
@@ -255,10 +361,16 @@ h2{
   background-color: black;
   color: white;
 }
+.darkmode #contain {
+  background-color: #121212;
+  box-shadow: 5px 10px 8px #121212;
+  color: white;
+}
 .darkmode .hha {
   color: white;
 }
 .loadingpage{
+  display: block;
   z-index: 21;
   position: fixed;
   top: 0;

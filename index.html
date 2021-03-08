@@ -22,41 +22,34 @@ href="style.css">
      width="40"
      height="40"></img><div><h1><span class="span" id="v">V</span><span class="span" >I</span><span class="span" >C</span><span class="span" >T</span><span class="span" >E</span><span class="span" >R</span><span class="span" >S</span></h1></div>
     <img class="menu" src="images/menu.png" onclick="myFunction1()"/>
-</div>
 <div class="contain" id="contain">
    <li id="vivo" class="vivo" onclick="myFunction()"><p class="omm">Theme</p><i class="fas fa-adjust"></i>
    </li>
-   <li class="vivo">
+   <li class="vivo" id="vivo1">
     <a class="hha" href="https://m.youtube.com/c/itsvicters/videos?disable_polymer=true&itct=CBQQ8JMBGAEiEwiY5KHioNzuAhURU3wKHUC7Cg0%3D"> Firstbell <span class="gig">YouTube</span></a>
    </li>
-</div>
-<div class="loadingpage" id="loadingpage">
-<div id="loadingpage2" class="loadingpage2">
-  <div class="logojump">
-    <img class="logo1" src="images/logo.png" alt="logo" width="40" height="40"></img>
-    <div>
-      <h1><span class="span" id="v">V</span><span class="span">I</span><span class="span">C</span><span class="span">T</span><span class="span">E</span><span class="span">R</span><span class="span">S</span></h1>
-    </div>
-  </div>
- <div id="please" class="logojump">
-    <p>Just a sec...</p>
- </div>
- <div class="logojump">
-   <div class="loading"></div>
- </div>
 </div>
 </div>
 <div class="ul">
   <a href="#">STD1</a>
-  <a href="#id02">STD2</a>
-  <a href="#id03">STD3</a>
-  <a href="#id04">STD4</a>
-  <a href="#id05">STD5</a>
-  <a href="#id06">STD6</a>
+  <a id="aa" href="#id02">STD2</a>
+  <a id="ab" href="#">STD2</a>
+  <a id="fa" href="#id03">STD3</a>
+  <a id="fb" href="#">STD3</a>
+  <a id="ba" href="#id04">STD4</a>
+  <a id="bb" href="#id03">STD4</a>
+  <a id="ga" href="#id05">STD5</a>
+  <a id="gb" href="#id03">STD5</a>
+  <a id="ca" href="#id06">STD6</a>
+  <a id="cb" href="#id05">STD6</a>
+  <a id="cc" href="#id03">STD6</a>
   <a href="#id07">STD7</a>
-  <a href="#id08">STD8</a>
-  <a href="#id09">STD9</a>
-  <a href="#id10">STD10</a>
+  <a id="da" href="#id08">STD8</a>
+  <a id="db" href="#id07">STD8</a>
+  <a id="ha" href="#id09">STD9</a>
+  <a id="hb" href="#id06">STD9</a>
+  <a id="ea" href="#id10">STD10</a>
+  <a id="eb" href="#id09">STD10</a>
   <a href="#id11">STD11</a>
   <a href="#id12">STD12</a>
 </div>
@@ -132,12 +125,6 @@ href="style.css">
 <img src="images/scrollbutton.png" alt="^^" />
  </div></a>
 <script type="text/javascript" charset="utf-8">
-  var x =document.getElementById('loadingpage');
-  window.onload = function() {
-    x.style.display='none';
-  }
-</script>
-<script type="text/javascript" charset="utf-8">
 function myFunction() {
 var element = document.getElementById('lightmode');
 element.classList.toggle("darkmode");
@@ -152,5 +139,30 @@ element.classList.toggle("contain1");
 </div>
 <a href="#" class="jp">
  <h2> by JP </h2></a>
+</div>
+<div class="loadingpage" id="loadingpage">
+  <div id="loadingpage2" class="loadingpage2">
+    <div class="logojump">
+      <img class="logo1" src="images/logo.png" alt="logo" width="40" height="40"></img>
+      <div>
+        <h1><span class="span" id="v">V</span><span class="span">I</span><span class="span">C</span><span class="span">T</span><span class="span">E</span><span class="span">R</span><span class="span">S</span></h1>
+      </div>
+    </div>
+    <div id="please" class="logojump">
+      <p>Just a sec...</p>
+    </div>
+    <div class="logojump">
+      <div class="loading"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+  var x = document.getElementById('loadingpage');
+  var y = document.getElementById('lightmode');
+  window.onload = function() {
+    x.style.display = 'none';
+    y.style.display = 'block';
+  }
+</script>
 </body>
 </html>
