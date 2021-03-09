@@ -162,7 +162,7 @@ h2{
   display: none;
 }
 @media screen and (min-width:500px) {
- .vivo {
+ .contain a{
       width: 400px;
     }
   .grid-container{
@@ -206,16 +206,12 @@ h2{
   }
 }
 @media screen and (min-width:900px) {
-  #vivo {
+  .contain a{
     width: 150px;
     font-size: 20px;
   }
-  #vivo1 {
+  .caontain a{
     padding:10px;
-  }
-  .hha .omm .gig {
-    font-size: 20px;
-
   }
   .grid-container{
     display: grid;
@@ -250,7 +246,7 @@ h2{
   #hb {
     display:inline-block;
   }
-  .menu{
+  .topmenu{
     display: none;
   }
   #contain {
@@ -265,6 +261,7 @@ h2{
     justify-content:center;
     align-items: center;
     padding:0px;
+    width: auto;
   }
 }
 .loadingpage2{
@@ -303,9 +300,9 @@ h2{
 }
 .fa-adjust{
   font-size: 23px;
-  padding: 10px;
+  padding: 0px;
 }
-#vivo:hover .fa-adjust{
+#themelogo:hover .fa-adjust{
   animation: logomove 0.7s ease-in-out 1 forwards;
 }
 .darkmode .fa-adjust{
@@ -314,63 +311,57 @@ h2{
 .darkmode h2{
   color: white;
 }
-.menu{
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 15px;
-}
 .contain{
   background-color: white;
   box-shadow: rgba(0, 0, 0,0.2) 16px 16px 4px;
-  position:fixed;
+  border-top: 1px solid black;
+  position: absolute;
   top:70px;
   right:0;
-  height:auto;
   z-index:5;
-  display: none;
-  justify-content:center;
-  align-items: center;
-  padding: 10px;
+  display: block;
+  width: 0px;
+  transition: 0.5s;
+  text-align: center;
+  height: 91px;
+  overflow: hidden;
 }
 .contain1{
-  display: grid;
+  width:100%;
+  transition: 0.5s;
+  text-align: center;
+  overflow: hidden;
 }
-.vivo{
-  display:flex;
-  justify-content:flex-start;
-  align-items: center;
-  width: 200px;
+.contain a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
 }
-.gig {
+.YouTubetext {
   color: red;
   font-size:20px;
 }
-.hha{
-  color:black;
-  text-decoration:none;
-  padding:10px;
+.darkmode .contain a{
+  color: white;
 }
-.vivo:hover{
+.contain a:hover{
    border:2px solid red;
-}
-.omm{
-  padding-left: 10px;
 }
 .darkmode .contain1{
   background-color: black;
   color: white;
 }
-.darkmode #contain {
+.darkmode .contain {
   background-color: #121212;
   box-shadow: 5px 10px 8px #121212;
   color: white;
 }
-.darkmode .hha {
-  color: white;
-}
 .loadingpage{
-  display: block;
+  display: none;
   z-index: 21;
   position: fixed;
   top: 0;
@@ -428,4 +419,61 @@ h2{
 }
 .darkmode .jp{
   color: white;
+}
+.darkmode .bar1 {
+  background-color: white;
+}
+.darkmode .bar2 {
+  background-color: white;
+}
+.darkmode .bar3 {
+  background-color: white;
+}
+.container2 {
+  display:inline;
+  cursor:pointer;
+}
+.bar1, .bar2, .bar3 {
+  width:35px;
+  height:5px;
+  background-color:black;
+  transition:0.5s ease-in-out;
+  padding:0;
+  border-radius:2px;
+}
+.bar1{
+  margin-bottom:6px;
+}
+.bar2 {
+  margin-bottom:6px;
+}
+.change1 .bar1 {
+  -webkit-transform:
+  rotate(-45deg)
+  translate(-9px,7px);
+  
+  transform:
+  rotate(-45deg)
+  translate(-8px,8px);
+  width:25px;
+  height:3px;
+}
+.change1 .bar2 {
+   opacity: 0;
+   width:25px;
+  }
+.change1 .bar3 {
+   -webkit-transform:
+  rotate(45deg)
+  translate(-5px, -7px);
+  transform:
+  rotate(45deg)
+  translate(-5px, -7px);
+  width:25px;
+  height:3px;
+}
+.topmenu{
+  font-size: 30px;
+   position: absolute;
+   right: 15px;
 }

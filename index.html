@@ -14,20 +14,25 @@ href="style.css">
   }
 </style>
 </head>
-<body>
+<body onclick="menuhide()">
 <div class="lightmode" id="lightmode">
   
 <div class="header"><img class="logo" src="images/logo.png"
      alt="logo"
      width="40"
      height="40"></img><div><h1><span class="span" id="v">V</span><span class="span" >I</span><span class="span" >C</span><span class="span" >T</span><span class="span" >E</span><span class="span" >R</span><span class="span" >S</span></h1></div>
-    <img class="menu" src="images/menu.png" onclick="myFunction1()"/>
+    <div class="topmenu" onclick="myFunction10()">
+     <div class="container2" onclick="myFunction20(this)">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+   </div></div>
 <div class="contain" id="contain">
-   <li id="vivo" class="vivo" onclick="myFunction()"><p class="omm">Theme</p><i class="fas fa-adjust"></i>
-   </li>
-   <li class="vivo" id="vivo1">
-    <a class="hha" href="https://m.youtube.com/c/itsvicters/videos?disable_polymer=true&itct=CBQQ8JMBGAEiEwiY5KHioNzuAhURU3wKHUC7Cg0%3D"> Firstbell <span class="gig">YouTube</span></a>
-   </li>
+  <div id="themelogo" onclick="myFunction()">
+   <a>Theme<i class="fas fa-adjust"></i>
+   </a>
+   </div>
+   <a href="https://m.youtube.com/c/itsvicters/videos?disable_polymer=true&itct=CBQQ8JMBGAEiEwiY5KHioNzuAhURU3wKHUC7Cg0%3D"> Firstbell <span class="YouTubetext">YouTube</span></a>
 </div>
 </div>
 <div class="ul">
@@ -130,11 +135,17 @@ var element = document.getElementById('lightmode');
 element.classList.toggle("darkmode");
 }
 </script>
-<script type="text/javascript" charset="utf-8">
-function myFunction1() {
-var element = document.getElementById('contain');
-element.classList.toggle("contain1");
-}
+<script>
+  function myFunction20(x) {
+    x.classList.toggle("change1");
+  }
+</script>
+<script>
+  function myFunction10() {
+    var element =
+      document.getElementById("contain");
+    element.classList.toggle("contain1");
+  }
 </script>
 </div>
 <a href="#" class="jp">
@@ -164,5 +175,6 @@ element.classList.toggle("contain1");
     y.style.display = 'block';
   }
 </script>
+
 </body>
 </html>
