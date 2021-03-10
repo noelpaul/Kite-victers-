@@ -3,6 +3,7 @@
    scroll-behavior: smooth;
  }
  body {
+       background-color: white;
        margin: 0;
        padding: 0;
        font-family: verdana;
@@ -162,9 +163,6 @@ h2{
   display: none;
 }
 @media screen and (min-width:500px) {
- .contain a{
-      width: 400px;
-    }
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -206,12 +204,15 @@ h2{
   }
 }
 @media screen and (min-width:900px) {
-  .contain a{
-    width: 150px;
-    font-size: 20px;
+  #themelogo{
+    width: auto;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .caontain a{
-    padding:10px;
+  .contain a{
+    margin: 0px;
+    display: block;
   }
   .grid-container{
     display: grid;
@@ -253,15 +254,15 @@ h2{
     background-color: white;
     box-shadow: 5px 10px 8px white;
     position:absolute;
-    top:auto;
+    top: 0;
     right:15px;
-    height:auto;
+    height: 70px;
+    width: auto;
     z-index:1;
     display: flex;
-    justify-content:center;
+    justify-content: flex-end;
     align-items: center;
     padding:0px;
-    width: auto;
   }
 }
 .loadingpage2{
@@ -300,7 +301,7 @@ h2{
 }
 .fa-adjust{
   font-size: 23px;
-  padding: 0px;
+  padding-left: 10px;
 }
 #themelogo:hover .fa-adjust{
   animation: logomove 0.7s ease-in-out 1 forwards;
@@ -351,9 +352,10 @@ h2{
 .contain a:hover{
    border:2px solid red;
 }
-.darkmode .contain1{
-  background-color: black;
+.darkmode #contain{
+  background-color: #121212;
   color: white;
+  box-shadow: 5px 10px 8px #121212;
 }
 .darkmode .contain {
   background-color: #121212;
@@ -361,7 +363,7 @@ h2{
   color: white;
 }
 .loadingpage{
-  display: none;
+  display: block;
   z-index: 21;
   position: fixed;
   top: 0;
