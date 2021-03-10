@@ -9,7 +9,7 @@
        font-family: verdana;
  }
  .lightmode{
-   display: none;
+   display: block;
    background-color:white;
    height:100%;
    width: 100%;
@@ -109,6 +109,7 @@ h2{
 }
 .logo1:hover {
   animation: logomove 0.7s ease-in-out infinite forwards;
+  
 }
 @keyframes logomove {
   0% {
@@ -202,18 +203,34 @@ h2{
   #eb {
     display:inline-block;
   }
+  .topmenu{
+    display: none;
+  }
+  #contain {
+    border: none;
+    background-color: white;
+    box-shadow: 5px 10px 8px white;
+    position:absolute;
+    top: 0;
+    right:15px;
+    height: 70px;
+    width: auto;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+  }
+  #themea{
+    display: flex;
+
+    margin-right: 10px;
+  }
+  .containbox{
+    height: 40px;
+  }
 }
 @media screen and (min-width:900px) {
-  #themelogo{
-    width: auto;
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .contain a{
-    margin: 0px;
-    display: block;
-  }
   .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -246,24 +263,6 @@ h2{
   }
   #hb {
     display:inline-block;
-  }
-  .topmenu{
-    display: none;
-  }
-  #contain {
-    border: none;
-    background-color: white;
-    box-shadow: 5px 10px 8px white;
-    position:absolute;
-    top: 0;
-    right:15px;
-    height: 70px;
-    width: auto;
-    z-index:1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding:0px;
   }
 }
 .loadingpage2{
@@ -304,8 +303,15 @@ h2{
   font-size: 23px;
   padding-left: 10px;
 }
-#themelogo:hover .fa-adjust{
+.containbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.containbox:hover .fa-adjust{
   animation: logomove 0.7s ease-in-out 1 forwards;
+  animation-fill-mode: backwards
 }
 .darkmode .fa-adjust{
   color: #FFFFFF;
@@ -334,13 +340,10 @@ h2{
   overflow: hidden;
 }
 .contain a{
-  display: block;
   text-decoration: none;
   color: black;
   text-align: center;
-  width: 100%;
   font-size: 20px;
-  padding: 10px;
 }
 .YouTubetext {
   color: red;
@@ -349,8 +352,9 @@ h2{
 .darkmode .contain a{
   color: white;
 }
-.contain a:hover{
-   border:2px solid red;
+.containbox:hover{
+  border-bottom:2px solid red;
+  border-top:2px solid red;
 }
 .darkmode #contain{
   background-color: #121212;
@@ -363,7 +367,7 @@ h2{
   color: white;
 }
 .loadingpage{
-  display: block;
+  display: none;
   z-index: 21;
   position: fixed;
   top: 0;
